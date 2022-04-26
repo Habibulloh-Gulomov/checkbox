@@ -1,0 +1,114 @@
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.title{
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 0;
+  font-size: 16px;
+}
+
+.checkbox{
+  width: 250px;
+}
+
+.checkbox__label{
+  display:flex;
+  justify-content: left;
+  flex-direction: row-reverse;
+  margin-bottom: 10px;
+}
+
+.checkbox__span , .checkbox__span__first , .checkbox__span__second , .checkbox__span__third , .checkbox__span__four{
+  display: inline-block;
+  margin-right: 10px;
+  width: 15px;
+  height: 15px;
+  border: 1px solid black;
+  border-radius: 3px;
+}
+
+ .checkbox__own:checked ~ .checkbox__span{
+  background-image: url('../img/table-tennis.png');
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position:center;
+} 
+
+.checkbox__own:checked ~ .checkbox__span__second{
+  background-image: url('../img/basketball-ball.png');
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position:center;
+} 
+
+.checkbox__own:checked ~ .checkbox__span__third{
+  background-image: url('../img/volleyball-ball.png');
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position:center;
+} 
+
+.checkbox__own:checked ~ .checkbox__span__four{
+  background-image: url('../img/hockey-puck.png');
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position:center;
+}
+
+.checkbox__own:focus ~ .checkbox__span{
+  box-shadow:  0px 7px 29px 0px rgba(100, 100, 111, 0.2);
+}
+
+.checkbox__span__fifth{
+  display: inline-block;
+  margin-right: 10px;
+  width: 15px;
+  height: 15px;
+  border: 1px solid black;
+  border-radius: 3px;
+}
+
+
+.checkbox__own:checked ~ .checkbox__span__fifth{
+  background-image: url('../img/hockey-puck.png');
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position:center;
+}
+
+.checkbox__own:disabled ~ .checkbox__span__fifth{
+  background-image: url('../img/hockey-puck.png');
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position:center;
+  opacity: 0.7;
+}
+
+.checkbox__span__six{
+  display: inline-block;
+  margin-right: 10px;
+  width: 15px;
+  height: 15px;
+  border: 1px solid black;
+  border-radius: 3px;
+}
+
+.checkbox__own:disabled ~ .checkbox__span__six{
+  opacity: 0.7;
+}
+
+.checkbox__label__disabled{
+  display: flex;
+  justify-content: left;
+  flex-direction: row-reverse;
+  margin-bottom: 10px;
+  opacity: 0.7;
+}
